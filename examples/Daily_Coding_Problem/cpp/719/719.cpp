@@ -6,12 +6,12 @@
 // For example, given 1, return "A".Given 27, return "AA".
 #include <iostream>
 #include  <string>
-std::string GetColumnId(int columnNumber)
+std::string GetColumnId(size_t columnNumber)
 {
-    int length = ((columnNumber - 1) / 26) + 1;
-    int factor = (columnNumber - 1) % 26;
+    auto length{ ((columnNumber - 1) / 26) + 1};
+    int factor{ (columnNumber - 1) % 26 };
 
-    std::string id;
+    std::string id{};
     id.insert(0, length - 1, 'A');
     id += 'A' + factor;
 
@@ -19,8 +19,6 @@ std::string GetColumnId(int columnNumber)
 }
 int main()
 {
-    std::cout << "Hello World!\n";
-
     for (int i = 1; i < 60; i++)
     {
         std::cout << GetColumnId(i) << '\n';
