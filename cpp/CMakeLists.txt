@@ -3,4 +3,5 @@ project(cpp_study)
 
 add_subdirectory (examples)
 add_subdirectory (sorting)
+add_subdirectory (linked_list)
 
