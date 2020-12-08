@@ -1,3 +1,3 @@
 
-add_executable(insertion_sort source.cpp)
+add_executable(718 719.cpp)
 
