@@ -5,4 +5,4 @@ add_subdirectory (wave_array)
 add_subdirectory (count_zeros)
 add_subdirectory (sum_even)
 add_subdirectory (max_value_bitonic_array)
-
+add_subdirectory (rotate)
